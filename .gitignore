@@ -1,0 +1,22 @@
+# Non-project-specific build files:
+build.xml
+local.properties
+/gradlew
+/gradlew.bat
+/gradle
+# Ant builds
+ant-build
+ant-gen
+# Eclipse builds
+gen
+out
+# Gradle builds
+/build
+.DS_Store
+/bin
+bin
+/CordovaLib/bin
+/CordovaLib/bin/.classpath
+/CordovaLib/bin/.project
+
+/settings.gradle

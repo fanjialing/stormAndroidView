@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="assets/reset/css/base.css">
+    <link rel="stylesheet" href="assets/reset/css/common.css">
+    <title>首页输入身份信息</title>
+    <script src="assets/third/zepto/zepto.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" src="assets/reset/js/config.js"></script>
+    <script type="text/javascript" src="assets/reset/js/data.js"></script>
+	<script type="text/javascript" src="assets/reset/js/info/duijieyonghu.js"></script>
+</head>
+<body>
+<div id="loading" class="none">
+    <div class="login-layer">
+        <div class="login-box">
+            <div class="tc"><span class="loadingspan"></span></div>
+            <div class="tc" id="loading_msg"></div>
+        </div>
+    </div>
+</div>
+<div class="wrap">
+    <section class="top-60">
+        <header>
+            <a class="back left20" href="javascript:goback();"></a>
+            <span class="center">首页输入身份信息</span>
+        </header>
+        <article class="personal">
+            <ul class="data">
+                <li>
+                    <input type="text" placeholder="请输入您的员工账号" id="account">
+                </li>
+                <li>
+                    <input type="password" placeholder="请输入您的身份证后六位" id="idCard6">
+                </li>
+            </ul>
+        </article>
+        <div class="ml10 mr10"><button class="submit" id="submit_bt">确定提交</button></div>
+    </section>
+</div>
+</body>
+</html>

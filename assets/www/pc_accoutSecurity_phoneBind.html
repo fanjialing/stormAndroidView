@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="assets/reset/css/base.css">
+    <link rel="stylesheet" href="assets/reset/css/common.css">
+    <title>重新绑定手机</title>
+    <script src="assets/third/zepto/zepto.min.js"></script>
+    <script src="assets/reset/js/form.js"></script>
+    <script src="cordova.js"></script>
+    <script src="assets/reset/js/pc/as/phoneBinding.js"></script>  
+    <script>
+        form.validCode();
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <section class="top-60">
+        <header>
+            <a class="back left20" href="#" id="goback" ></a>
+            <span class="center">重新绑定手机</span>
+        </header>
+        <article class="personal">
+            <ul class="data">
+                <li><input  type="text" placeholder="请输入您的新手机"></li>
+                <li>
+                    <input  type="text" placeholder="请输入您的验证码" class="check-code-input">
+                    <div class="check-code-btn">获取验证码</div>
+                </li>
+            </ul>
+        </article>
+        <div class="ml10 mr10"><button class="submit" id="button" >重新绑定手机</button></div>
+    </section>
+</div>
+
+</body>
+</html>

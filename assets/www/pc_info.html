@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="assets/reset/css/base.css">
+    <link rel="stylesheet" href="assets/reset/css/common.css">
+    <title>修改个人信息</title>
+    <script src="assets/third/zepto/zepto.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" src="assets/reset/js/config.js"></script>
+    <script type="text/javascript" src="assets/reset/js/data.js"></script>
+    <script src="assets/reset/js/info/info.js"></script>
+</head>
+<body>
+<div id="loading" class="none">
+    <div class="login-layer">
+        <div class="login-box">
+            <div class="tc"><span class="loadingspan"></span></div>
+            <div class="tc">获取中，请稍后...</div>
+        </div>
+    </div>
+</div>
+<div class="wrap">
+    <section class="top-60">
+        <header>
+            <a class="back left20" href="#" id="goback" ></a>
+            <span class="center">修改个人信息</span>
+        </header>
+        <article class="personal">
+            <ul class="data">
+                <li class="face-wrap">
+                    <a class="face" id="face">
+                        <div class="fl title">头 像</div>
+                        <div class="fr first pr10"><img id="myImage" src="assets/reset/images/face.jpg" ></div>
+                    </a>
+                </li>
+                <li>
+                    <a id="idMsg">
+                        <div class="fl title">身份信息</div>
+                        <div class="fr content" id="name"></div>
+                    </a>
+                </li>
+                <li>
+                    <a id="agentCertificateAvailable">
+                        <div class="fl title">保代人认证状态</div>
+                        <div class="fr content c-blue" id="agentCertificateAvailable_State"></div>
+                    </a>
+                </li>
+            </ul>
+        </article>
+    </section>
+</div>
+</body>
+</html>

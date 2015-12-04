@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="assets/reset/css/base.css">
+    <link rel="stylesheet" href="assets/reset/css/common.css">
+    <title>保代人资格</title>
+    <script src="assets/third/zepto/zepto.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" src="assets/reset/js/config.js"></script>
+    <script type="text/javascript" src="assets/reset/js/data.js"></script>
+	<script type="text/javascript" src="assets/reset/js/info/baodairenzhengzige.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <section class="top-60">
+        <header>
+            <a class="back left20" href="javascript:goback();"></a>
+            <span class="center">保代人资格</span>
+        </header>
+        <article class="personal">
+            <ul class="data">
+                <li>
+                    <div class="fl title">姓 名</div>
+                    <div class="fr content" id="name"></div>
+                </li>
+                <li>
+                    <div class="fl title">性别</div>
+                    <div class="fr content" id="gender"></div>
+                </li>
+                <li>
+                    <div class="fl title">资格证书类型</div>
+                    <div class="fr content substr" id="category"></div>
+                </li>
+                <li>
+                    <div class="fl title">资格证书小类</div>
+                    <div class="fr content" id="secondCategory"></div>
+                </li>
+                <li>
+                    <div class="fl title">资格证书代码</div>
+                    <div class="fr content" id="credential"></div>
+                </li>
+                <li>
+                    <div class="fl title">有效期</div>
+                    <div class="fr content" id="indate"></div>
+                </li>
+            </ul>
+        </article>
+    </section>
+</div>
+
+</body>
+</html>

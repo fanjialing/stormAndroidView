@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="assets/reset/css/base.css">
+    <link rel="stylesheet" href="assets/reset/css/common.css">
+    <title>修改密码</title>
+    <script src="assets/third/zepto/zepto.min.js"></script>
+    <script src="assets/reset/js/form.js"></script>
+    <script src="cordova.js"></script>
+    <script src="assets/reset/js/pc/as/modifyPwd.js"></script>  
+    <script>
+        form.PasswordTabBtn();
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <section class="top-60">
+        <header>
+            <a class="back left20" href="#" id="goback"></a>
+            <span class="center">修改密码</span>
+        </header>
+        <article class="personal">
+            <ul class="data">
+             <li> <input  type="text" placeholder="请输原始密码"></li>
+                <li>
+                    <input  type="password" placeholder="请输新密码" name="password" id="password" class="inputpassword">
+                    <div class="tab-btn" id="togglePassword">
+                        <span class="off"></span>
+                        <span id="txt">*****</span>
+                    </div>
+                </li>
+                 
+            </ul>
+        </article>
+        <div class="ml10 mr10"><button class="submit">确认使用新密码</button></div>
+
+    </section>
+</div>
+
+</body>
+</html>

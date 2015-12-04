@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+<!--     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FF0000"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:text="This is native text view"
+        /> -->
+        
+
+        
+  <include layout="@layout/title_bar" />
+  
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <ProgressBar
+            android:id="@+id/mProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e6e6fa"
+            android:progressDrawable="@drawable/progress_bar_drawable"
+            android:visibility="gone" >
+        </ProgressBar>
+    </LinearLayout>
+  
+    <org.apache.cordova.engine.SystemWebView
+        android:id="@+id/remote_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    
+
+
+</LinearLayout>

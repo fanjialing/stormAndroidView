@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="assets/reset/css/base.css">
+    <link rel="stylesheet" href="assets/reset/css/common.css">
+    <title>登录</title>
+    <style>
+        html,body{background:#34b3e8;}
+    </style>
+    <script src="assets/third/zepto/zepto.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" src="assets/reset/js/config.js"></script>
+    <script type="text/javascript" src="assets/reset/js/data.js"></script>
+	<script type="text/javascript" src="assets/reset/js/login/login.js"></script>
+</head>
+<body>
+<div id="loading" class="none">
+    <div class="login-layer">
+        <div class="login-box">
+            <div class="tc"><span class="loadingspan"></span></div>
+            <div class="tc">登录中，请稍后...</div>
+        </div>
+    </div>
+</div>
+<div class="wrap">
+    <section class="top-44">
+        <article class="login">
+           <div class="logo"><img src="assets/reset/images/logo.png"></div>
+           <ul class="form">
+               <li>
+                   <div class="icon icon1"></div>
+                   <div class="right-inp"><input type="text" id="mobile" value="18883774456" placeholder="请输入您的手机号码"></div>
+               </li>
+               <li>
+                   <div class="icon icon2"></div>
+                   <div class="right-inp"><input type="password" id="password" value="123456" placeholder="请输入您的密码"></div>
+               </li>
+               <li>
+                   <button class="button" id="lg_bt">立即登录</button>
+               </li>
+               <li>
+                   <a href="#" class="fl"  id="reg">快速注册</a>
+                   <a href="#" class="fr"  id="forgotPwd">找回密码</a>
+               </li>
+           </ul>
+        </article>
+    </section>
+</div>
+</body>
+</html>

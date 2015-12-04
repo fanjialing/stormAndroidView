@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">保蜂</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+    <string name="back_exit">再按一次退出程序</string>
+    
+    <string name="insert_card">插入卡</string>
+    <string name="down_fail">下载失败</string>
+    <string name="is_downing">正在下载</string>
+     <string name="down_sucess">下载成功</string>
+   <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>     
+    
+         <!-- 退出 -->
+        <string name="exit_text_1">退出系统</string>
+        <string name="exit_text_2">退出后，你将收不到新的消\n息.确定要退出？</string>
+        <string name="exit_btn_yes">是</string>
+        <string name="exit_btn_no">否</string>
+</resources>

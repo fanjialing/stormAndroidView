@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="assets/reset/css/base.css">
+    <link rel="stylesheet" href="assets/reset/css/common.css">
+    <script src="cordova.js"></script>
+    <script src="assets/third/zepto/zepto.min.js"></script>
+    <script>
+    		$(function(){
+    				$("#goSetNetwork").tap(function(){
+    				
+    						window.network();
+    				});
+    				
+    				$("#reload").tap(function(){
+    					   window.location.href= GetRequest()['reloadUrl'];
+    				});
+    		
+    		});
+    		
+    		
+function GetRequest() {
+
+   var url = location.search; 
+
+   var theRequest = new Object();
+
+   if (url.indexOf("?") != -1) {
+
+      var str = url.substr(1);
+
+      strs = str.split("&");
+
+      for(var i = 0; i < strs.length; i ++) {
+
+         theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+
+      }
+
+   }
+
+   return theRequest;
+
+}
+    </script>
+    <title>网络请求失败</title>
+</head>
+<body>
+<div class="wrap">
+    <section>
+   <!--     <header>
+            <a class="back left20" href="javascript:history.go(-1);"></a>
+            <span class="center">无网络</span>
+        </header>  -->
+        <article class="wifi-error">
+            <div class="wifi-top">
+                <a href="#"  id="goSetNetwork">
+                    网络请求失败，请检查您的网络设置
+                </a>
+            </div>
+            <div class="wifi-content">
+                <div class="wifi-icon"></div>
+                <p class="font1">网络无法连接</p>
+                <p class="font2">请检查您的网络!</p>
+                <a class="reset-btn"  id="reload">重新加载</a>
+            </div>
+        </article>
+    </section>
+</div>
+
+</body>
+</html>
